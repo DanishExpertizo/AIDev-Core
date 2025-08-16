@@ -123,7 +123,6 @@ const BottomInput = () => (
 export default function HeroSection() {
     return (
         <div className="relative min-h-screen overflow-hidden bg-[#00010C]">
-            {/* <div className="background-gradient" /> */}
 
             <div
                 className="absolute w-full h-full z-[2]"
