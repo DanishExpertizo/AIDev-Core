@@ -1,14 +1,14 @@
 import { MockupImageData } from "@/Types/HeroSection";
 import Image from "next/image";
 
-const MockupImage = ({ image, position }: { image: MockupImageData; position: 'left' | 'right' }) => (
+const MockupImage = ({ image, position, index }: { image: MockupImageData; position: 'left' | 'right'; index: number }) => (
 
     <Image
         src={image.src}
         alt="App mockup"
         width={image.width}
         height={image.height}
-        className="absolute rounded-[10px] object-cover"
+        className={`absolute rounded-[10px] object-cover sr-${position}-screenshots-${index}`}
         style={{
             width: `${image.width}px`,
             height: `${image.height}px`,

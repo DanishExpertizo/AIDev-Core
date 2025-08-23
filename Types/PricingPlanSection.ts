@@ -4,6 +4,7 @@ export type Plan = {
     description: string
     features: string[]
     isPopular?: boolean
+    className?: string
 }
 
 export type PricingCardProps = {

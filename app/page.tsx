@@ -1,3 +1,4 @@
+"use client";
 
 import React from 'react';
 import LandingPageLayout from '@/components/LandingPageLayout';
@@ -9,8 +10,11 @@ import WebContainerSection from '@/components/WebContainerSection';
 import PricingPlanSection from '@/components/PricingPlanSection';
 import PricingComparisonSection from '@/components/PricingComparisonSection';
 import GetStartedSection from '@/components/GetStartedSection';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const Home = () => {
+  useScrollReveal();
+
   return (
     <>
       <LandingPageLayout>

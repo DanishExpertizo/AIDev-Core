@@ -3,7 +3,7 @@ import { features, plans } from "../data"
 import MobilePlanCard from "./MobilePlanCard"
 
 const MobilePlanTabs = () => (
-    <div className="block lg:hidden">
+    <div className="block lg:hidden sr-general">
         <Tabs defaultValue="starter" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 bg-slate-900/50 p-1 rounded-lg">
                 {plans.map((plan) => (

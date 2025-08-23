@@ -8,7 +8,7 @@ import MobileToggle from "./MobileToggle";
 
 const LargeScreenNav: FC<LargeScreenNavProps> = ({ isOpen, toggleMenu }) => {
     return (
-        <div className="fixed top-5 inset-x-0 z-[9999]">
+        <div className="fixed top-5 inset-x-0 z-[9999] sr-navbar">
             <div className="mx-auto w-[95%] max-w-6xl">
                 <div className="overflow-hidden rounded-[20px] bg-[linear-gradient(100.2deg,rgba(255,255,255,0.17)_42.37%,rgba(214,214,214,0.17)_90.26%)] p-[1px]">
                     <nav className="rounded-[20px] bg-[#FFFFFF12] backdrop-blur-[47.3px] backdrop-saturate-150 border border-[#3AA8E7]">

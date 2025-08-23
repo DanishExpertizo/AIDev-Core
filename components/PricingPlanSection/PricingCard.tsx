@@ -10,7 +10,7 @@ const PricingCard: FC<PricingCardProps> = ({ plan }) => {
             className={`relative p-8 backdrop-blur-[12.6px] backdrop-saturate-150 mx-auto max-w-full sm:max-w-3/4 md:max-w-full ${plan.isPopular
                 ? "bg-[linear-gradient(to_top,rgba(15,86,126,1)_0%,rgba(15,86,126,1)_10%,rgba(0,1,12,1)_60%)] border-[#6EC9FD]/50"
                 : "bg-[#00010C] border-slate-600"
-                }`}
+                } sr-pricingplan-card-${plan.className}`}
         >
             {plan.isPopular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">

@@ -9,7 +9,3 @@ export type HalfArcIconsProps = {
     imagePrefix: string;
     altPrefix: string;
 };
-
-export type DecorativeStarProps = {
-    className: string
-};

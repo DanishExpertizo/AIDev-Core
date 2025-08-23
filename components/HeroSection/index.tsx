@@ -1,12 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
+import MainHeading from '../MainHeading';
 import BottomInput from './BottomInput';
 import { backgroundLayers } from './data';
 import FloatingScreenshots from './FloatingScreenshots';
 import QuickActionButtons from './QuickActionButtons';
-import MainHeading from '../MainHeading';
 
 export default function HeroSection() {
+
     return (
         <div className="relative min-h-screen overflow-hidden bg-[#00010C] pb-4">
             {backgroundLayers.map((layer, index) => (
@@ -16,7 +17,7 @@ export default function HeroSection() {
             <div className="relative z-10 mt-36 flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-4 sm:px-6">
                 <div className="mb-12 max-w-4xl text-center px-2">
                     <MainHeading title1="Revolutionize Your Coding" title2="Experience With AI DEV" />
-                    <p className="mx-auto max-w-xl sm:max-w-2xl text-base sm:text-lg md:text-xl text-white/80">
+                    <p className="mx-auto max-w-xl sm:max-w-2xl text-base sm:text-lg md:text-xl text-white/80 sr-text">
                         Empower your development process with AI-driven efficiency
                         <br className="hidden sm:block" />
                         and seamless code generation
@@ -26,7 +27,8 @@ export default function HeroSection() {
                 <div className="relative w-full max-w-6xl">
                     <FloatingScreenshots />
 
-                    <Card className="relative w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-[665px] h-auto m-auto border-gray-800 bg-black shadow-2xl rounded-3xl z-50">
+                    <Card
+                        className="relative w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-[665px] h-auto m-auto border-gray-800 bg-black shadow-2xl rounded-3xl z-50 sr-herosection-card">
                         <CardContent className="px-4 sm:px-6 md:px-8 py-4">
                             <div className="space-y-6">
                                 <div>

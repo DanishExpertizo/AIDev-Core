@@ -9,7 +9,7 @@ const PricingSection = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <MainHeading title1="Choose the right plan," title2="for your needs" />
-                    <SubHeading title="Flexible Plans for Every Developer - Start Free" />
+                    <SubHeading title="Flexible Plans for Every Developer - Start Free" className="sr-sub-heading" />
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-4 lg:gap-8 max-w-6xl mx-auto">
