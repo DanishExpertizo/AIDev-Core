@@ -4,25 +4,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import SubHeading from "../SubHeading";
 import MainHeading from "../MainHeading";
+import MotionWrapper from "@/hooks/useAnimations";
 
-const Section4 = () => {
+const WebContainerSection = () => {
     return (
         <div className="min-h-screen bg-[#00010C] text-white">
             <div className="container max-w-6xl mx-auto py-20 px-5">
                 <div className="mb-22 text-center">
-                    <SubHeading className="sr-sub-heading" />
+                    <SubHeading />
                     <MainHeading
                         title1="Refactor Code Automatically,"
                         title2="Optimize Codebase"
                     />
                 </div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 40 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    viewport={{ amount: 0.3 }}
+                <MotionWrapper
+                    delay={0.3}
+                    duration={0.6}
                     className="h-[690px] flex justify-center items-end rounded-2xl"
                     style={{
                         background:
@@ -37,13 +35,13 @@ const Section4 = () => {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 40 }}
-                        transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                        viewport={{ amount: 0.3 }}
+                        transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+                        viewport={{ once: true, amount: 0.3 }}
                     />
-                </motion.div>
+                </MotionWrapper>
             </div>
         </div>
     );
 };
 
-export default Section4;
+export default WebContainerSection;

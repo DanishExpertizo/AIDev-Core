@@ -1,9 +1,10 @@
 import Background from "./Background";
 import Content from "./Content";
 
-const Section7 = () => {
+const GetStartedSection = () => {
     return (
         <section
+            id="get-started"
             className="relative min-h-screen flex items-center px-4 sm:px-8 bg-[#00010C]"
             style={{
                 backgroundImage: "url('/assets/images/GetStartedSection/bg-img.png')",
@@ -21,4 +22,4 @@ const Section7 = () => {
     )
 }
 
-export default Section7;
+export default GetStartedSection;

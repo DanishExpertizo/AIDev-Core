@@ -15,7 +15,7 @@ const ArcWrapper = () => {
 
     return (
         <div className="relative w-[312px] h-[312px] lg:w-[412px] lg:h-[412px] flex items-center justify-center">
-            <div className="absolute inset-0 flex items-center justify-center rellax" data-rellax-speed="-2">
+            <div className="absolute inset-0 flex items-center justify-center rellax" >
                 <Image
                     src="/assets/images/TimeLineSection/arc-wrapper.png"
                     alt="Arc Wrapper"

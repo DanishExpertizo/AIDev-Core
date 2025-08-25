@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { FooterSectionProps } from "@/Types/Footer";
 import FooterLink from "./FooterLink";
+import MotionWrapper from "@/hooks/useAnimations";
 
 const FooterSection: FC<FooterSectionProps> = ({ title, items, className }) => {
     return (
-        <div
+        <MotionWrapper delay={0.4} distance={40}
             className={`flex-1 flex items-center px-4 sm:px-6 rounded-2xl sm:rounded-3xl min-h-[220px] sm:min-h-[260px] lg:min-h-[299px] w-3/4 border border-slate-700/50 ${className}`}
             style={{
                 background:
@@ -21,7 +22,7 @@ const FooterSection: FC<FooterSectionProps> = ({ title, items, className }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </MotionWrapper>
     );
 }
 

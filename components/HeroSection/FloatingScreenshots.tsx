@@ -7,6 +7,7 @@ const FloatingScreenshots = () => (
             <div key={position} className="relative pointer-events-none hidden sm:block">
                 {mockupImages[position].map((image, index) => (
                     <MockupImage key={`${position}-${index}`} index={index} image={image} position={position} />
+
                 ))}
             </div>
         ))}

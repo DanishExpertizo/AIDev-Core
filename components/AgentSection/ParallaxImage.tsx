@@ -12,7 +12,7 @@ export default function ParallaxImage() {
         offset: ["start end", "end start"],
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [0, -60]);
+    const y = useTransform(scrollYProgress, [0, 1], [100, -150]);
 
     return (
         <div
@@ -24,7 +24,7 @@ export default function ParallaxImage() {
                 backdropFilter: "blur(18.6px)",
             }}
         >
-            <motion.div style={{ y }} className="max-w-[480px] md:max-w-[600px] lg:max-w-[730px]" transition={{ type: "spring", stiffness: 50 }}>
+            <motion.div className="max-w-[480px] md:max-w-[600px] lg:max-w-[730px]" style={{ y }} transition={{ type: "spring", stiffness: 20, damping: 12 }}>
                 <Image
                     className="pointer-events-none w-full object-cover mx-auto lg:mx-0"
                     src="/assets/images/AgentSection/side-img.png"

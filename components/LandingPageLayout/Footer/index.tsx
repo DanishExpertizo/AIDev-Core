@@ -24,7 +24,7 @@ export default function Footer() {
                                 key={index}
                                 title={section.title}
                                 items={section.items}
-                                className={`sr-general ${section.className}`}
+                                className={`${section.className}`}
                             />
                         ))}
                     </div>

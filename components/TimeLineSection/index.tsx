@@ -4,7 +4,7 @@ import { LEFT_ARC_ANGLES, RIGHT_ARC_ANGLES } from './Constants';
 import ArcWrapper from './ArcWrapper';
 import HalfArcIcons from './HalfArcIcons';
 
-const Section3 = () => {
+const TimeLineSection = () => {
 
     return (
         <div
@@ -37,4 +37,4 @@ const Section3 = () => {
     )
 }
 
-export default Section3
+export default TimeLineSection;
