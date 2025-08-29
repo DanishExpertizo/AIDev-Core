@@ -10,7 +10,7 @@ const Content = () => {
 
             <MainHeading
                 title1="Ready to launch your"
-                title2={<span className="text-blue-400">First</span>}
+                title2={<span><span className="text-blue-400">First</span> Project</span>}
             />
             <MotionWrapper delay={0.4} distance={20}>
                 <p className="max-w-xl mx-auto text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6 sm:mb-8">

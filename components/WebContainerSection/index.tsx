@@ -21,7 +21,7 @@ const WebContainerSection = () => {
                 <MotionWrapper
                     delay={0.3}
                     duration={0.6}
-                    className="h-[690px] flex justify-center items-end rounded-2xl"
+                    className="flex justify-center items-end rounded-2xl sm:pt-20 pt-8 border border-gray-800"
                     style={{
                         background:
                             "linear-gradient(175.32deg, rgba(0, 1, 12, 0.41) 1.88%, rgba(58, 168, 231, 0.41) 122.43%, rgba(58, 168, 231, 0.41) 182.61%)",
@@ -31,7 +31,7 @@ const WebContainerSection = () => {
                     <motion.img
                         src="/assets/images/WebContainerSection/container-img.png"
                         alt="Section 4 Image"
-                        className="h-[85%] pointer-events-none"
+                        className="w-[90%] md:w-[75%] pointer-events-none h-auto"
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 40 }}

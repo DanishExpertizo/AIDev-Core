@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/lib/utils";
 import { Feature } from "@/Types/AgentSection";
 
@@ -16,16 +14,14 @@ const FeatureItem: React.FC<{ feature: Feature }> = ({ feature }) => (
                     feature.active
                         ? "text-white text-xl sm:text-2xl lg:text-3xl"
                         : "text-gray-500 text-lg sm:text-xl lg:text-2xl",
-                    "font-medium"
+                    "font-medium transition-all ease-in-out"
                 )}
             >
                 {feature.title}
             </h3>
-            {feature.active && (
-                <p className="text-white/70 text-sm sm:text-lg lg:text-xl leading-relaxed max-w-sm">
-                    {feature.description}
-                </p>
-            )}
+            <p className={`text-white/70 text-sm sm:text-lg lg:text-xl transition-all duration-500 ease-in-out leading-relaxed max-w-sm ${feature.active ? "opacity-100" : "opacity-0 text-sm"}`}>
+                {feature.active ? feature.description : ""}
+            </p>
         </div>
     </div>
 );

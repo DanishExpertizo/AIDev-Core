@@ -2,14 +2,14 @@ import { MockupImageData } from "@/Types/HeroSection";
 
 export const mockupImages: { left: MockupImageData[]; right: MockupImageData[] } = {
     left: [
-        { src: '/assets/images/HeroSection/app-mockup-1.png', width: 190, height: 288, top: 70, left: 15, rotation: -8.24, zIndex: 10 },
-        { src: '/assets/images/HeroSection/app-mockup-2.png', width: 191, height: 254, top: 110, left: 80, rotation: -11.38, zIndex: 20 },
-        { src: '/assets/images/HeroSection/app-mockup-3.png', width: 230, height: 324, top: 50, left: 185, rotation: 0.67, zIndex: 30 }
+        { src: '/assets/images/HeroSection/app-mockup-1.png', width: 190, height: 244, top: 75, left: 65, rotation: -8.24, zIndex: 10 },
+        { src: '/assets/images/HeroSection/app-mockup-2.png', width: 191, height: 215, top: 110, left: 130, rotation: -11.38, zIndex: 20 },
+        { src: '/assets/images/HeroSection/app-mockup-3.png', width: 230, height: 280, top: 50, left: 235, rotation: 0.67, zIndex: 30 }
     ],
     right: [
-        { src: '/assets/images/HeroSection/app-mockup-4.png', width: 222, height: 305, top: 75, right: 40, rotation: 6.65, zIndex: 50 },
-        { src: '/assets/images/HeroSection/app-mockup-5.png', width: 192, height: 254, top: 60, right: 120, rotation: 10.49, zIndex: 50 },
-        { src: '/assets/images/HeroSection/app-mockup-6.png', width: 229, height: 234, top: 100, right: 160, rotation: 8.79, zIndex: 50 }
+        { src: '/assets/images/HeroSection/app-mockup-4.png', width: 222, height: 265, top: 70, right: 95, rotation: 6.65, zIndex: 50 },
+        { src: '/assets/images/HeroSection/app-mockup-5.png', width: 192, height: 220, top: 60, right: 170, rotation: 10.49, zIndex: 50 },
+        { src: '/assets/images/HeroSection/app-mockup-6.png', width: 229, height: 195, top: 105, right: 210, rotation: 8.79, zIndex: 50 }
     ]
 };
 

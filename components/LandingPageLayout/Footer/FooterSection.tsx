@@ -6,7 +6,7 @@ import MotionWrapper from "@/hooks/useAnimations";
 const FooterSection: FC<FooterSectionProps> = ({ title, items, className }) => {
     return (
         <MotionWrapper delay={0.4} distance={40}
-            className={`flex-1 flex items-center px-4 sm:px-6 rounded-2xl sm:rounded-3xl min-h-[220px] sm:min-h-[260px] lg:min-h-[299px] w-3/4 border border-slate-700/50 ${className}`}
+            className={`flex-1 flex items-center px-4 sm:px-6 rounded-2xl sm:rounded-3xl min-h-[220px] sm:min-h-[260px] lg:min-h-[299px] max-w-[288px] w-full border border-slate-700/50 ${className}`}
             style={{
                 background:
                     "linear-gradient(154.62deg, rgba(0, 1, 12, 0.11) 8.02%, rgba(58, 168, 231, 0.11) 73.26%, rgba(58, 168, 231, 0.11) 105.83%)",

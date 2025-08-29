@@ -1,11 +1,11 @@
 
 const Logo = () => {
     return (
-        <div className="flex items-center">
-            <div className="rounded-full bg-white/90 px-5 py-2">
-                <div className="h-5 w-12 rounded-full bg-gray-300" />
-            </div>
-        </div>
+        /* eslint-disable-next-line @next/next/no-html-link-for-pages */
+        <a href="/" className="flex items-center h-2/3">
+            <img className="h-full w-auto pointer-events-none" src="assets/images/Navbar/logo.png" alt="logo" />
+        </a>
+        /* eslint-enable @next/next/no-html-link-for-pages */
     );
 }
 

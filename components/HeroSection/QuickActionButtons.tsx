@@ -20,7 +20,7 @@ const QuickActionButtons = () => (
             <Button
                 key={index}
                 variant="outline"
-                className="border-gray-700 bg-gray-900 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600 whitespace-nowrap"
+                className="border-gray-700 hover:border-gray-600 bg-[#141414] text-gray-300 hover:bg-[#222222] hover:text-white whitespace-nowrap text-xs"
             >
                 {action}
             </Button>

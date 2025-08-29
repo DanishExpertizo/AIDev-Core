@@ -3,7 +3,7 @@ import MotionWrapper from "@/hooks/useAnimations";
 const FooterBrand = () => {
     return (
         <MotionWrapper delay={0.4} distance={40}>
-            <div className="flex-1 text-center lg:text-left">
+            <div className="flex-2 text-center lg:text-left">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-cyan-400 mb-4">
                     AI DEV
                 </h2>
